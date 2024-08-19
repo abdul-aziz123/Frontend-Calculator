@@ -1,3 +1,4 @@
+const colors = require("tailwindcss/colors");
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -16,6 +17,11 @@ export default {
       "key-shadow-orange": "hsl(28, 16%, 65%)",
       "very-dark-grayish-blue": "hsl(221, 14%, 31%)",
       white: "hsl(0, 0%, 100%)",
+      red: colors.red,
+      teal: colors.teal,
+      orange: colors.orange,
+      stone: colors.stone,
+      gray: colors.gray,
     },
     extend: {},
   },
