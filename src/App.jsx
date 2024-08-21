@@ -32,6 +32,7 @@ export default function App() {
         {
           "bg-main-background": theme === "theme_1",
           "bg-stone-100": theme === "theme_2",
+          "bg-Very-dark-violet-main-background": theme === "theme_3",
         }
       )}
     >
@@ -40,6 +41,7 @@ export default function App() {
           className={cn("text-white text-2xl font-bold", {
             "text-white": theme === "theme_1",
             "text-stone-950": theme === "theme_2",
+            "text-Light-yellow-3": theme === "theme_3",
           })}
         >
           calc
@@ -49,6 +51,7 @@ export default function App() {
             className={cn({
               "text-white": theme === "theme_1",
               "text-stone-950": theme === "theme_2",
+              "text-Light-yellow-3": theme === "theme_3",
             })}
           >
             THEME
@@ -58,6 +61,7 @@ export default function App() {
               className={cn("flex gap-5", {
                 "text-white": theme === "theme_1",
                 "text-stone-950": theme === "theme_2",
+                "text-Light-yellow-3": theme === "theme_3",
               })}
             >
               <span>1</span>
@@ -68,6 +72,8 @@ export default function App() {
               className={cn(" h-5 rounded-xl relative group", {
                 "bg-keypad-background": theme === "theme_1",
                 "bg-stone-300": theme === "theme_2",
+                "bg-Very-dark-violet-toggle-background-keypad-background-screen-background":
+                  theme === "theme_3",
               })}
               onClick={handleThemeClick}
             >
@@ -79,7 +85,8 @@ export default function App() {
                       theme === "theme_1",
                     "left-6 bg-orange-700/80 group-hover:bg-orange-500":
                       theme === "theme_2",
-                    "left-12": theme === "theme_3",
+                    "left-12 bg-teal-400 group-hover:bg-teal-300":
+                      theme === "theme_3",
                   }
                 )}
               ></div>
@@ -93,6 +100,8 @@ export default function App() {
           {
             "bg-screen-background text-white": theme === "theme_1",
             "bg-stone-50 text-stone-900": theme === "theme_2",
+            "bg-Very-dark-violet-toggle-background-keypad-background-screen-background text-Light-yellow-3":
+              theme === "theme_3",
           }
         )}
       >
@@ -102,6 +111,8 @@ export default function App() {
         className={cn(" min-w-96 grid grid-cols-4 p-5 rounded-lg gap-3.5", {
           "bg-keypad-background": theme === "theme_1",
           "bg-stone-300": theme === "theme_2",
+          "bg-Very-dark-violet-toggle-background-keypad-background-screen-background":
+            theme === "theme_3",
         })}
       >
         <Button onClick={handleClick} theme={theme}>

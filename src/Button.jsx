@@ -25,6 +25,12 @@ function Button({
             variant === "secondary" && theme === "theme_2",
           "bg-orange-700 text-white shadow-orange-800 hover:bg-orange-600 shadow-md":
             variant === "tertiary" && theme === "theme_2",
+          " bg-Very-dark-violet-key-background-3 text-Light-yellow-3 shadow-Dark-magenta-key-shadow-3 text-3xl ":
+            variant === "primary" && theme === "theme_3",
+          "bg-Dark-violet-key-background-3 text-white hover:bg-purple-800 text-2xl shadow-Vivid-magenta-key-shadow-3 ":
+            variant === "secondary" && theme === "theme_3",
+          "bg-Pure-cyan-key-background-toggle-3 text-[#000000] shadow-Soft-cyan-key-shadow-3 hover:bg-teal-300 shadow-sm":
+            variant === "tertiary" && theme === "theme_3",
         },
         className
       )}
