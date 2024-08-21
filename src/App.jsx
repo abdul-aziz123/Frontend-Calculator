@@ -36,9 +36,9 @@ export default function App() {
         }
       )}
     >
-      <div className="theme flex justify-between items-center min-w-96">
+      <div className="theme flex justify-between items-center min-w-80 sm:min-w-96">
         <span
-          className={cn("text-white text-2xl font-bold", {
+          className={cn("text-white sm:text-2xl text-3xl  font-bold", {
             "text-white": theme === "theme_1",
             "text-stone-950": theme === "theme_2",
             "text-Light-yellow-3": theme === "theme_3",
@@ -46,7 +46,7 @@ export default function App() {
         >
           calc
         </span>
-        <div className="font-bold text-[0.65rem] flex gap-6 items-center">
+        <div className="font-bold sm:text-[0.65rem] text-xs flex sm:gap-6 gap-5 items-center">
           <span
             className={cn({
               "text-white": theme === "theme_1",
@@ -96,7 +96,7 @@ export default function App() {
       </div>
       <div
         className={cn(
-          "screen  min-w-96 p-4 text-4xl font-bold text-right rounded-lg min-h-20 overflow-x-auto",
+          "screen min-w-80 sm:min-w-96 p-4 text-4xl font-bold text-right rounded-lg min-h-20 overflow-x-auto",
           {
             "bg-screen-background text-white": theme === "theme_1",
             "bg-stone-50 text-stone-900": theme === "theme_2",
@@ -108,12 +108,15 @@ export default function App() {
         {calculation}
       </div>
       <div
-        className={cn(" min-w-96 grid grid-cols-4 p-5 rounded-lg gap-3.5", {
-          "bg-keypad-background": theme === "theme_1",
-          "bg-stone-300": theme === "theme_2",
-          "bg-Very-dark-violet-toggle-background-keypad-background-screen-background":
-            theme === "theme_3",
-        })}
+        className={cn(
+          "min-w-80 sm:min-w-96 grid grid-cols-4 p-5 rounded-lg gap-3.5",
+          {
+            "bg-keypad-background": theme === "theme_1",
+            "bg-stone-300": theme === "theme_2",
+            "bg-Very-dark-violet-toggle-background-keypad-background-screen-background":
+              theme === "theme_3",
+          }
+        )}
       >
         <Button onClick={handleClick} theme={theme}>
           1
